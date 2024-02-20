@@ -13,6 +13,8 @@ import JsonEditor from './components/JsonEditor.vue'
     <json-editor/>
    
   </main>
+
+  
 </template>
 
 <style scoped>
