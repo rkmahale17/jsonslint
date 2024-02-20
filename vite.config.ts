@@ -8,8 +8,8 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  base:"/jsonslint/",   
   resolve: {
-    base:"/jsonslint/",    
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
