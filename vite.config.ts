@@ -10,7 +10,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./dist', import.meta.url))
+      '@': fileURLToPath(new URL('/jsonlint/', import.meta.url))
     }
   }
 })
