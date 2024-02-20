@@ -8,10 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  base:
-  process.env.NODE_ENV === "production"
-    ? "/jsonslint/" // production
-    : "/", // development
+  base:"/jsonslint/", // development
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
