@@ -9,6 +9,7 @@ export default defineConfig({
     vue(),
   ],
   resolve: {
+    base:"/jsonslint/",
     
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
