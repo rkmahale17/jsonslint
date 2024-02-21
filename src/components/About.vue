@@ -28,8 +28,13 @@ export default {
 
 <style scoped>
 .about {
-  max-width: 800px;
-  margin: 0 auto;
+  margin: 10px auto;
+  padding:10px;
+   border: 1px solid #ccc;
+
+
+   border-radius:10px;
+
 }
 
 .about h2 {

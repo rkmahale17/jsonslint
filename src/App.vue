@@ -15,11 +15,12 @@ import About from './components/About.vue'
 
   <main>
     <json-editor/>
+     <About/>
     <JsonInfo/>
    
   </main>
-  <About/>
-  <!-- <Footer /> -->
+ 
+  <Footer />
 
   
 </template>
