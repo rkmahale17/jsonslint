@@ -1,8 +1,15 @@
 <template>
-  <div>
-    <textarea v-model="jsonData" placeholder="Enter JSON data here"></textarea>
-    <button @click="lintJson">Lint JSON</button>
+  
+<div>
+    <div id="source-code">
+    <div id="line-numbers" ref="linenubers"><p>1</p></div>
+    <textarea   v-model="jsonData" @keyup.enter="init" placeholder="Enter JSON data here" id="codeblock" ref="codeblock"></textarea>
+    </div>
+     
+    <button @click="lintJson">Validate Json</button>
     <div v-if="error" class="error">{{ error }}</div>
+     <div v-if="success" class="success"> Valid  Json Structure</div>
+     
   </div>
 </template>
 
@@ -11,15 +18,159 @@ export default {
   data() {
     return {
       jsonData: '',
-      error: ''
+      error: '',
+      success:false,
+      linenumbers : document.getElementById('line-numbers'),
+ editor : this.$refs.codeblock,
     };
   },
+  
   methods: {
+   getWidth(elem) {
+
+	return elem.scrollWidth - (parseFloat(window.getComputedStyle(elem, null).getPropertyValue('padding-left')) + parseFloat(window.getComputedStyle(elem, null).getPropertyValue('padding-right')))
+
+},
+
+ getFontSize(elem) {
+
+	return parseFloat(window.getComputedStyle(elem, null).getPropertyValue('font-size'));
+
+},
+
+ cutLines(lines) {
+
+	return lines.split(/\r?\n/);
+
+},
+
+	
+
+	
+
+ getLineHeight(elem) {
+
+	var computedStyle = window.getComputedStyle(elem);
+
+	var lineHeight = computedStyle.getPropertyValue('line-height');
+
+	var lineheight;
+
+	
+
+	if (lineHeight === 'normal') {
+
+		var fontSize = computedStyle.getPropertyValue('font-size');
+
+		lineheight = parseFloat(fontSize) * 1.2;
+
+	} else {
+
+		lineheight = parseFloat(lineHeight);
+
+	}
+
+	
+
+	return lineheight;
+
+},
+
+ getTotalLineSize(size, line, options) {
+
+	if (typeof options === 'object') options = {};
+
+	var p = document.createElement('span');
+
+	p.style.setProperty('white-space', 'pre');
+
+	p.style.display = 'inline-block';
+
+	if (typeof options.fontSize !== 'undefined') p.style.fontSize = options.fontSize;
+
+	p.innerHTML = line;
+
+	document.body.appendChild(p);
+
+	var result = (p.scrollWidth / size);
+
+	p.remove();
+
+	return Math.ceil(result);
+
+},
+
+ getLineNumber() {
+
+	var textLines = this.editor.value.substr(0, this.editor.selectionStart).split("\n");
+
+	var currentLineNumber = textLines.length;
+
+	var currentColumnIndex = textLines[textLines.length-1].length;
+
+	return currentLineNumber;
+
+},
+
+	
+
+ init() {
+  this.editor =  this.$refs.codeblock;
+  this.linenumbers = this.$refs.linenubers
+	var totallines = this.cutLines(this.editor.value), linesize;
+
+	this.linenumbers.innerHTML = '';
+
+	for (var i = 1; i <= totallines.length; i++) {
+
+		var num = document.createElement('p');
+
+		num.innerHTML = i;
+
+		this.linenumbers.appendChild(num);
+
+			
+
+		linesize = this.getTotalLineSize(this.getWidth(this.editor), totallines[(i - 1)], {'fontSize' : this.getFontSize(this.editor)});
+
+		if (linesize > 1) {
+
+			num.style.height = (linesize * getLineHeight(this.editor)) + 'px';
+
+		}
+
+	}
+
+		
+
+	linesize = this.getTotalLineSize(this.getWidth(this.editor), totallines[(this.getLineNumber() - 1)], {'fontSize' : this.getFontSize(this.editor)});
+
+	if (linesize > 1) {
+
+		linenumbers.childNodes[(getLineNumber() - 1)].style.height = (linesize * getLineHeight(this.editor)) + 'px';
+
+	}
+
+		
+
+	this.editor.style.height = this.editor.scrollHeight;
+
+	this.linenumbers.style.height = this.editor.scrollHeight;
+
+},
+
+
+
+
+
     lintJson() {
       try {
         JSON.parse(this.jsonData);
         this.error = ''; // Clear error if JSON is valid
+        this.success = true;
+      
       } catch (error) {
+        this.success = false;
         this.error = error.message; // Display error message
       }
     }
@@ -28,6 +179,112 @@ export default {
 </script>
 
 <style scoped>
+#heading {
+        text-align:center;
+	    font-size: 26px;    
+        font-family: arial, sans-serif;
+        font-weight: 300;
+        color: #00c1ff;
+	}
+	#source-code {
+
+		width: 100%;
+
+		height: 80vh;
+
+		background-color: #2F2F2F;
+
+		display: flex;
+
+		justify-content: space-between;
+
+		overflow-y: scroll;
+
+		border-radius: 10px;
+
+	}
+
+		#source-code * {
+
+		box-sizing: border-box;
+
+	}
+
+	
+
+	#codeblock {
+
+		white-space: pre-wrap;
+
+		width: calc(100% - 30px);
+
+		float: right;
+
+		height: auto;
+
+		font-family: arial;
+
+		color: #fff;
+
+		background: transparent;
+
+		padding: 15px;
+
+		line-height: 30px;
+
+		overflow: hidden;
+
+		min-height: 100%;
+
+		border: none;
+
+	}
+
+	
+
+	#line-numbers {
+	
+		min-width: 30px;
+
+		height: 100%;
+
+		padding: 15px 5px;
+
+		font-size: 14px;
+
+		vertical-align: middle;
+
+		text-align: right;
+
+		margin: 0;
+
+		color: #fff;
+
+		background: black;
+
+	}
+
+	
+
+	#line-numbers p {
+
+		display: block;
+
+		height: 30px;
+
+		line-height: 30px;
+
+		margin: 0;
+
+	}
+
+	
+
+	#codeblock:focus{
+
+		outline: none;
+
+	}
 textarea {
   width: 100%;
   height: 200px;
@@ -35,6 +292,10 @@ textarea {
 
 .error {
   color: red;
+  margin-top: 10px;
+}
+.success {
+  color: green;
   margin-top: 10px;
 }
 </style>

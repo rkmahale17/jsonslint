@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="left-side">
-      <h1>JSONS Lint</h1>
+      <h1>{...} JSONS Lint</h1>
     </div>
     <!-- Add other elements for the right side of the header if needed -->
   </header>
