@@ -10,7 +10,7 @@ export default defineConfig({
   ],
   base:
   process.env.NODE_ENV === "production"
-    ? "/jsonslint/" // production
+    ? "/jsonslint/dist" // production
     : "/",
   resolve: {
     alias: {
