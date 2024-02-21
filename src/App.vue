@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import AppHeader from './components/AppHeader.vue'
 import JsonEditor from './components/JsonEditor.vue'
+import JsonInfo from './components/JsonInfo.vue'
+
+
 
 </script>
 
@@ -11,6 +14,7 @@ import JsonEditor from './components/JsonEditor.vue'
 
   <main>
     <json-editor/>
+    <JsonInfo/>
    
   </main>
 
