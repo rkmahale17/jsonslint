@@ -2,7 +2,8 @@
 import AppHeader from './components/AppHeader.vue'
 import JsonEditor from './components/JsonEditor.vue'
 import JsonInfo from './components/JsonInfo.vue'
-
+import Footer from './components/Footer.vue'
+import About from './components/About.vue'
 
 
 </script>
@@ -17,6 +18,8 @@ import JsonInfo from './components/JsonInfo.vue'
     <JsonInfo/>
    
   </main>
+  <About/>
+  <!-- <Footer /> -->
 
   
 </template>
