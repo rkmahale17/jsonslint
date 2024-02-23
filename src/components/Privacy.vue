@@ -35,9 +35,10 @@
   </script>
   
   <style scoped>
+  p{
+    color:rgb(45 45 50)
+  }
   .privacy-policy {
-    background-color: #000;
-    color: #fff;
     padding: 20px;
   }
   .privacy-policy h1 {
@@ -52,6 +53,9 @@
   .privacy-policy p {
     font-size: 16px;
     margin-bottom: 10px;
+  }
+  h2{
+    border-bottom:1px solid rgb(225, 223, 223)
   }
   </style>
   

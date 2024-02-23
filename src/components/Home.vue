@@ -1,20 +1,18 @@
 <script setup lang="ts">
-import AppHeader from './components/AppHeader.vue'
-import Footer from './components/Footer.vue'
+import JsonEditor from './JsonEditor.vue'
+import JsonInfo from './JsonInfo.vue'
+
+import About from './About.vue'
 
 
 </script>
 
 <template>
-  <header>
-    <AppHeader/>
-  </header>
-  <RouterView />
-
-  
- 
-  <Footer />
-
+<main>
+    <json-editor/>
+    <JsonInfo/>
+   
+  </main>
   
 </template>
 
