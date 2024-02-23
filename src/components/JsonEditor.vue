@@ -2,27 +2,29 @@
   <div>
     <section class="d-flex">
       <div id="source-code">
-        <div id="line-numbers" ref="linenubers"><p>1</p></div>
+        <div id="line-numbers" ref="lineNumbers"><p>1</p></div>
         <textarea
           v-model="jsonData"
+          @paste="init"
           @keyup.enter="init"
           placeholder="Enter JSON data here"
           id="codeblock"
           ref="codeblock"
         ></textarea>
       </div>
-      <div class="d-grid gap-2 d-flex align-items-end flex-column m-2 ">
+      <div class="d-grid gap-2 d-flex align-items-start flex-column m-2 ">
         <div>
+          <button @click="formatJson" type="button"
+            class="btn btn-success">Format Json</button>
           <button
             type="button"
-            class="btn btn-success"
+            class="btn btn-success mt-2"
             @click="copyTextArea"
           >
             Copy Json
           </button>
         </div>
-		
-        <div class="d-grid gap-2 d-flex flex-column mt-auto justify-content-end">
+          <div class="d-grid gap-2 d-flex flex-column mt-auto justify-content-end">
           <button
             @click="clearInput"
             class="btn btn-outline-primary"
@@ -34,6 +36,8 @@
             Validate Json
           </button>
         </div>
+		
+        
       </div>
     </section>
 
@@ -79,6 +83,18 @@ export default {
   },
 
   methods: {
+    formatJson(){
+      try{
+const parsedJson = JSON.parse(this.jsonData);
+this.jsonData = JSON.stringify(parsedJson, null, 2);
+this.init();
+
+      }
+      catch(error){
+        this.success = false;
+        this.error = error.message;
+      }
+    },
     copyTextArea() {
 	  this.isShowAlert = true;
 	  this.alertMsg = "Copied data successfully !"
@@ -169,8 +185,9 @@ export default {
     },
 
     init() {
+      console.log("init called");
       this.editor = this.$refs.codeblock;
-      this.linenumbers = this.$refs.linenubers;
+      this.linenumbers = this.$refs.lineNumbers;
       var totallines = this.cutLines(this.editor.value),
         linesize;
 
@@ -190,7 +207,7 @@ export default {
         );
 
         if (linesize > 1) {
-          num.style.height = linesize * getLineHeight(this.editor) + "px";
+          num.style.height = linesize * this.getLineHeight(this.editor) + "px";
         }
       }
 
@@ -201,8 +218,8 @@ export default {
       );
 
       if (linesize > 1) {
-        linenumbers.childNodes[getLineNumber() - 1].style.height =
-          linesize * getLineHeight(this.editor) + "px";
+        this.linenumbers.childNodes[this.getLineNumber() - 1].style.height =
+          linesize * this.getLineHeight(this.editor) + "px";
       }
 
       this.editor.style.height = this.editor.scrollHeight;
@@ -211,6 +228,7 @@ export default {
     },
 
     lintJson() {
+      this.formatJson();
       try {
         JSON.parse(this.jsonData);
         this.error = ""; // Clear error if JSON is valid

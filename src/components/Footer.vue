@@ -7,7 +7,7 @@
                 <div class="col-md-6 col-lg-3 about-footer">
                     <h3>Meet Us For Coffee </h3>
                     <ul>
-                        <li><a href="tel:(010) 8007610593"><i class="fas fa-phone fa-flip-horizontal"></i>(091) 8007610593</a></li>
+                        <li><a href="tel:(91) 8007610593"><i class="fas fa-phone fa-flip-horizontal"></i>(091) 8007610593</a></li>
                         <li><i class="fas fa-map-marker-alt"></i>
                             Hinjewadi,
                             <br/>Megapolis ,
@@ -21,8 +21,8 @@
                     </div>
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/privacy">Privacy</a></li>
+                        <li>    <RouterLink class="text-decoration-none navbar-brand home-title" :to="`/about`">About</RouterLink></li>
+                        <li>    <RouterLink class="text-decoration-none navbar-brand home-title" :to="`/privacy`">Privacy</RouterLink></li>
                     </ul>
                 </div>
 
@@ -31,11 +31,11 @@
                         <h4>Popular JSON Links </h4>
                     </div>
                     <ul>
-                      <li><a href="https://www.json.org/">JSON.org</a></li>
-          <li><a href="https://jsonlint.com/">JSONLint</a></li>
-          <li><a href="https://jsonformatter.curiousconcept.com/">JSON Formatter & Validator</a></li>
-          <li><a href="https://www.jsoneditoronline.org/">JSON Editor Online</a></li>
-          <li><a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a></li>
+                      <li><a target="_blank" href="https://www.json.org/">JSON.org</a></li>
+          <li><a target="_blank" href="https://jsonlint.com/">JSONLint</a></li>
+          <li><a target="_blank" href="https://jsonformatter.curiousconcept.com/">JSON Formatter & Validator</a></li>
+          <li><a target="_blank" href="https://www.jsoneditoronline.org/">JSON Editor Online</a></li>
+          <li><a target="_blank" href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a></li>
                         
                     </ul>
                 </div>
@@ -46,7 +46,8 @@
         <div class="footer-bottom">
             <div class="row">
                 <div class="col-sm-4">
-                    <a href="/privacy">Privacy policy</a>
+                  <RouterLink class="text-decoration-none navbar-brand home-title" :to="`/privacy`">Privacy Policy</RouterLink>
+                   
                 </div>
                 <div class="col-sm-8">
                     <p>JSONS LINT @ 2024 All rights reserved</p>
@@ -67,7 +68,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 h1,
         h2,

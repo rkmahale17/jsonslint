@@ -32,7 +32,7 @@ export default {
 <style scoped>
 .json-info {
   font-family: Arial, sans-serif;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
