@@ -42,9 +42,7 @@ header {
     flex-wrap: wrap; */
   }
   main{
-      margin: 0 auto;
-  padding: 2rem;
-   max-width: 1280px;
+
   }
 }
 </style>

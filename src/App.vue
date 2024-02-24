@@ -1,19 +1,16 @@
 <script setup lang="ts">
 import AppHeader from './components/AppHeader.vue'
 import Footer from './components/Footer.vue'
-
-
 </script>
 
 <template>
   <header>
     <AppHeader/>
   </header>
+  <main class="container m-auto mt-5">
   <RouterView />
-
-  
- 
-  <Footer />
+ </main>
+ <Footer />
 
   
 </template>
@@ -44,9 +41,6 @@ header {
     flex-wrap: wrap; */
   }
   main{
-      margin: 0 auto;
-  padding: 2rem;
-   max-width: 1280px;
   }
 }
 </style>

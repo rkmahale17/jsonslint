@@ -1,45 +1,6 @@
 <template>
-  <div>
-    <section class="d-flex">
-      <div id="source-code">
-        <div id="line-numbers" ref="lineNumbers"><p>1</p></div>
-        <textarea
-          v-model="jsonData"
-          @paste="init"
-          @keyup.enter="init"
-          placeholder="Enter JSON data here"
-          id="codeblock"
-          ref="codeblock"
-        ></textarea>
-      </div>
-      <div class="d-grid gap-2 d-flex align-items-start flex-column m-2 ">
-        <div>
-          <button @click="formatJson" type="button"
-            class="btn btn-success">Format Json</button>
-          <button
-            type="button"
-            class="btn btn-success mt-2"
-            @click="copyTextArea"
-          >
-            Copy Json
-          </button>
-        </div>
-          <div class="d-grid gap-2 d-flex flex-column mt-auto justify-content-end">
-          <button
-            @click="clearInput"
-            class="btn btn-outline-primary"
-            type="button"
-          >
-            Clear
-          </button>
-          <button @click="lintJson" class="btn mt-2 btn-primary" type="button">
-            Validate Json
-          </button>
-        </div>
-		
-        
-      </div>
-    </section>
+  <div> 
+   
 
     <div
       v-if="error"
@@ -66,6 +27,51 @@
     >
       <div>Valid Json Structure</div>
     </div>
+    <section class="row">
+      <div id="source-code" class="col-lg-10 col-xl-10 col-sm-12 col-md-12 col-xs-12 col-sm-12">
+        <div id="line-numbers" ref="lineNumbers"><p>1</p></div>
+        <textarea
+          v-model="jsonData"
+          @paste="init"
+          @keyup.enter="init"
+          placeholder="Enter JSON data here"
+          id="codeblock"
+          ref="codeblock"
+        ></textarea>
+      </div>
+      <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-md-12 col-sm-12 col-xs-12  m-2  d-lg-flex flex-lg-column justify-content-lg-between h-lg-80">
+        <div class="column   d-lg-flex flex-lg-column">
+          <button @click="formatJson" type="button"
+            class="btn btn-success col-md-5 col-sm-12 col-12 col-lg-12 1-1 ">Format Json</button>
+          <button
+            type="button"
+            class="btn btn-success mt-2 col-md-5 col-sm-12 col-lg-12 m-1 col-12 "
+            @click="copyTextArea"
+          >
+          Copy Json
+          </button>
+        </div>
+          <div class="column  d-lg-flex flex-lg-column">
+          <button
+            @click="clearInput"
+            class="btn btn-outline-primary col-12  col-md-5 col-sm-12 col-lg-12 m-1"
+            type="button"
+          >
+            Clear
+          </button>
+          <button @click="lintJson" class="btn col-12  mt-2 btn-primary col-md-5 col-sm-12 col-lg-12 m-1" type="button">
+            Validate Json
+          </button>
+        </div>
+		
+        
+      </div>
+      </div>
+      
+    </section>
+
+   
   </div>
 </template>
 
@@ -243,6 +249,11 @@ this.init();
 </script>
 
 <style scoped>
+@media only screen and (min-width : 991px) {
+   .h-lg-80{
+    height:80vh;
+   }
+}
 #heading {
   text-align: center;
   font-size: 26px;
@@ -251,7 +262,6 @@ this.init();
   color: #00c1ff;
 }
 #source-code {
-  width: 100%;
 
   height: 80vh;
 
@@ -283,7 +293,6 @@ this.init();
 #codeblock {
   white-space: pre-wrap;
 
-  width: calc(100% - 30px);
 
   float: right;
 
