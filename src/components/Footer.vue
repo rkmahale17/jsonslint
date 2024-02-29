@@ -5,12 +5,17 @@
         <div class="footer-top">
             <div class="row">
                 <div class="col-md-6 col-lg-3 about-footer">
-                    <h3>Meet Us For Coffee </h3>
+                    <h3>Contact Us </h3>
                     <ul>
-                        <li><a href="tel:(91) 8007610593"><i class="fas fa-phone fa-flip-horizontal"></i>(091) 8007610593</a></li>
+                        <li>
+                          <i class="fas fa-email fa-flip-horizontal">
+
+                          </i>
+                          mahale.usha19@gmail.com
+                        </li>
                         <li><i class="fas fa-map-marker-alt"></i>
                             Hinjewadi,
-                            <br/>Megapolis ,
+                            <br/>Megapolis,
                             <br/>Phase 3
                         </li>
                     </ul>
@@ -21,7 +26,7 @@
                     </div>
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li>    <RouterLink class="text-decoration-none navbar-brand home-title" :to="`/about`">About</RouterLink></li>
+                        <li>    <RouterLink class="text-decoration-none navbar-brand home-title" :to="`/about`" >About</RouterLink></li>
                         <li>    <RouterLink class="text-decoration-none navbar-brand home-title" :to="`/privacy`">Privacy</RouterLink></li>
                     </ul>
                 </div>
@@ -64,8 +69,20 @@
 
 <script>
 export default {
-  name: 'Footer'
-}
+  name: 'Footer',
+  data() {
+    return {
+      jsonData: "",
+      error: ""
+    };
+  },
+
+  methods: {
+    scrollToTop() {
+    window.scrollTo(0,0);
+  }
+  }
+  }
 </script>
 
 <style scoped>

@@ -5,7 +5,8 @@
 
   font-weight: normal;
 }
-
+html { height: 100%; overflow:auto; }
+body { height: 100%; }
 a,
 .green {
   text-decoration: none;
