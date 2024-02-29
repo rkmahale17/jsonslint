@@ -160,7 +160,7 @@ footer {
     background-image: -o-linear-gradient( top, #222023, #1e2c47 );
     background-image: linear-gradient( to bottom, #222023, #1e2c47 );
     color: #fff;
-    padding: 220px 0;
+    padding: 22px 0;
     font-size: 17px;
 }
 footer h3 {
@@ -180,7 +180,7 @@ footer h4 {
     left: 0;
 }
 .about-footer li {
-    padding-left: 40px;
+    padding-left: 6px;
     position: relative;
     margin-bottom: 40px;
 }

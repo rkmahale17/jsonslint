@@ -43,10 +43,10 @@
         <div class="col-md-12 col-sm-12 col-xs-12  m-2  d-lg-flex flex-lg-column justify-content-lg-between h-lg-80">
         <div class="column   d-lg-flex flex-lg-column">
           <button @click="formatJson" type="button"
-            class="btn btn-success col-md-5 col-sm-12 col-12 col-lg-12 1-1 ">Format Json</button>
+            class="btn btn-success col-md-5 col-sm-12 col-12 col-lg-12 m-2">Format Json</button>
           <button
             type="button"
-            class="btn btn-success mt-2 col-md-5 col-sm-12 col-lg-12 m-1 col-12 "
+            class="btn btn-success  col-md-5 col-sm-12 col-lg-12  col-12 m-2"
             @click="copyTextArea"
           >
           Copy Json
@@ -55,12 +55,12 @@
           <div class="column  d-lg-flex flex-lg-column">
           <button
             @click="clearInput"
-            class="btn btn-outline-primary col-12  col-md-5 col-sm-12 col-lg-12 m-1"
+            class="btn btn-outline-primary col-12  col-md-5 col-sm-12 col-lg-12 m-2"
             type="button"
           >
             Clear
           </button>
-          <button @click="lintJson" class="btn col-12  mt-2 btn-primary col-md-5 col-sm-12 col-lg-12 m-1" type="button">
+          <button @click="lintJson" class="btn col-12  mt-2 btn-primary col-md-5 col-sm-12 col-lg-12 m-2" type="button">
             Validate Json
           </button>
         </div>
