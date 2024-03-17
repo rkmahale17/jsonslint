@@ -9,7 +9,11 @@ import About from './About.vue'
 
 <template>
 <main>
+ 
+
+
     <json-editor/>
+    
     <JsonInfo/>
    
   </main>

@@ -1,5 +1,16 @@
 <template>
   <div class="json-info">
+    <div class="m-2">
+  <h4>
+    Features
+  </h4>
+   <div class="d-flex">
+    <h6 class="mx-2"> <span class="badge  text-bg-success">Json Lint</span></h6>
+  <h6 class="mx-2"> <span class="badge   text-bg-success">Json Fromatter</span></h6>
+  <h6 class="mx-2"> <span class="badge  text-bg-success">Json Validator</span></h6>
+   </div>
+
+ </div>
     <h2 class="title">JSON Format Information</h2>
     <p class="description">
       JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language.
@@ -14,18 +25,44 @@
         <li>Incorrect data types (e.g., using a string instead of a number)</li>
       </ul>
     </div>
-    <div class="additional-info">
+    
+    <div class="my-4">
+      <h2 class="title">Json Questions </h2>
+     <div class="list-group">
+      <router-link :to="getCleanUrl(questions.question)" class="list-group-item list-group-item-action text-bold" v-for="questions in qa" v-bind:key="questions.id">{{ questions.id }}</router-link>
+
+  
+</div>
+  </div>
+  <div class="additional-info">
       <h3 class="subtitle">Additional Information</h3>
       <p>
         For more information about JSON format, refer to the <a href="https://www.json.org/" target="_blank" rel="noopener noreferrer">JSON.org</a> website.
       </p>
+      <hr>
     </div>
   </div>
+  
+ 
 </template>
 
 <script>
+import { qaMapping } from '@/const';
+
 export default {
   name: 'JsonInfo',
+  data() {
+    return {
+       qa:qaMapping
+    }
+  },
+  methods:{
+    getCleanUrl(id) {
+      const url ='/qa/'+id;
+      // Encode special characters in the URL using encodeURIComponent
+      return url.split(' ').join('_')
+    }
+  }
 }
 </script>
 
@@ -65,4 +102,5 @@ export default {
   border-top: 1px solid #ccc;
   padding-top: 20px;
 }
+
 </style>

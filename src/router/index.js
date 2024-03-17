@@ -2,6 +2,7 @@ import About from '../components/About.vue'
 import Home from '../components/Home.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import Privacy from '../components/Privacy.vue'
+import qa from '../components/qa.vue'
 import.meta.env.BASE_URL
 const routes = [
     {
@@ -18,6 +19,11 @@ const routes = [
       path: '/about',
       name: 'about',
       component: About
+    },
+    {
+      path: '/qa/:id',
+      name: 'qa',
+      component: qa
     },
    
   ]
