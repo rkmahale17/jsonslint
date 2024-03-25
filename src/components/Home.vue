@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import JsonEditor from './JsonEditor.vue'
 import JsonInfo from './JsonInfo.vue'
-
+import editor from './editor.vue'
 import About from './About.vue'
 
 
@@ -11,8 +11,8 @@ import About from './About.vue'
 <main>
  
 
-
-    <json-editor/>
+   <editor></editor>
+    <!-- <json-editor/> -->
     
     <JsonInfo/>
    
