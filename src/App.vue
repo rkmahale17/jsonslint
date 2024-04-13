@@ -5,9 +5,11 @@ import Footer from './components/Footer.vue'
 
 <template>
   <header>
+
     <AppHeader/>
+   
   </header>
-  <main class="container m-auto mt-5">
+  <main class=" m-auto mt-5 mx-3">
   <RouterView />
  </main>
  <Footer />

@@ -190,6 +190,33 @@ export const qaMapping =[
       "question": "What do JSON and XML have in common",
       "answer": "Both JSON and XML are used for data exchange between systems, are human-readable, language-agnostic, support nested structures, and are easy to parse with various programming languages."
     }
+  ];
+
+export const jsonSample = {
+  "string": "This is a string value",
+  "number": 42,
+  "boolean": true,
+  "nullValue": null,
+  "array": [
+    "apple",
+    "banana",
+    "cherry"
+  ],
+  "object": {
+    "nestedString": "Nested string value",
+    "nestedNumber": 123,
+    "nestedBoolean": false
+  },
+  "emptyArray": [],
+  "emptyObject": {},
+  "unicodeString": "Unicode characters: \u03B1\u03B2\u03B3",
+  "escapeCharacters": "Escaped characters: \" \\ \/ \b \f \n \r \t",
+  "url": "https://www.example.com",
+  "date": "2024-03-31",
+  "nestedArray": [
+    [1, 2, 3],
+    [true, false, null]
   ]
-  
+}
+
   
