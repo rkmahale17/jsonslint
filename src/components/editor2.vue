@@ -91,23 +91,23 @@
   
   <script>
   
-import CodeMirror from 'codemirror/lib/codemirror';
-import 'codemirror/mode/javascript/javascript';
+// import CodeMirror from 'codemirror/lib/codemirror';
+// import 'codemirror/mode/javascript/javascript';
 
 // Fold
-import 'codemirror/addon/fold/foldcode';
-import 'codemirror/addon/fold/foldgutter';
-import 'codemirror/addon/fold/brace-fold';
-import 'codemirror/addon/fold/foldgutter.css';
-import 'codemirror/addon/dialog/dialog.css';
-import 'codemirror/addon/search/matchesonscrollbar.css';
-import 'codemirror/addon/dialog/dialog';
-import 'codemirror/addon/search/searchcursor';
-import 'codemirror/addon/search/search';
-import 'codemirror/addon/scroll/annotatescrollbar';
-import 'codemirror/addon/search/matchesonscrollbar';
-import 'codemirror/addon/search/jump-to-line';
-import 'codemirror/lib/codemirror.css';
+// import 'codemirror/addon/fold/foldcode';
+// import 'codemirror/addon/fold/foldgutter';
+// import 'codemirror/addon/fold/brace-fold';
+// import 'codemirror/addon/fold/foldgutter.css';
+// import 'codemirror/addon/dialog/dialog.css';
+// import 'codemirror/addon/search/matchesonscrollbar.css';
+// import 'codemirror/addon/dialog/dialog';
+// import 'codemirror/addon/search/searchcursor';
+// import 'codemirror/addon/search/search';
+// import 'codemirror/addon/scroll/annotatescrollbar';
+// import 'codemirror/addon/search/matchesonscrollbar';
+// import 'codemirror/addon/search/jump-to-line';
+// import 'codemirror/lib/codemirror.css';
     export default {
         components:{},
     data(){

@@ -54,6 +54,7 @@
         
         <codemirror
         ref="editor"
+        id="codeMirrorLinter"
       v-model="code"
       placeholder="Insert JSON Here"
       :style="{ height: '80vh' }"
@@ -277,7 +278,7 @@ methods: {
 .toolbar-btn{
   color:white;
 }
-.cm-gutters:first-child {
+#codeMirrorLinter .cm-gutters:first-child {
     display: none;
   }
    .cm-panels + .cm-panels  {
