@@ -1,6 +1,6 @@
 <template>
-    <div class="" v-if="load">
-<div class="card p-2 bg-black">
+    <div class="qa-wrapper" v-if="load">
+<div class="card p-2 bg-black qa">
     <h4> <span class=" ">  {{ getQuestion(id).question + "?"}}</span></h4>
 <hr>
 <h6> <span class=" txt-green">{{ getQuestion(id).answer}}</span></h6>
@@ -67,6 +67,14 @@
   </script>
   
   <style scoped>
+  .qa-wrapper{
+    margin:auto;
+    max-width: 800px;
+    .qa{
+      max-width:600px;
+    }
+   
+  }
   .bg-black{
     background: black;
     color:white;

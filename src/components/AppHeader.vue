@@ -29,7 +29,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <RouterLink class="nav-link" activeClass="active-link" :to="`/`">Fortmat Json</RouterLink> 
+          <RouterLink class="nav-link" activeClass="active-link" :to="`/`">Format Json</RouterLink> 
         </li>
         <li class="nav-item">
           <RouterLink class="nav-link" activeClass="active-link" :to="`/compare-code`">Compare Code</RouterLink> 
