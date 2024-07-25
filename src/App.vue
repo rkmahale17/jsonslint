@@ -9,7 +9,7 @@ import Footer from './components/Footer.vue'
     <AppHeader/>
    
   </header>
-  <main class=" m-auto mt-5 mx-3">
+  <main class=" m-auto mt-5 container">
   <RouterView />
  </main>
  <Footer />
@@ -21,6 +21,7 @@ import Footer from './components/Footer.vue'
 header {
   line-height: 1.5;
 }
+
 
 .logo {
   display: block;
@@ -42,7 +43,6 @@ header {
     place-items: flex-start;
     flex-wrap: wrap; */
   }
-  main{
-  }
+  
 }
 </style>

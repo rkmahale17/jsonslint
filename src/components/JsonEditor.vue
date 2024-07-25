@@ -25,7 +25,7 @@
       class="alert alert-success d-flex align-items-center mt-4 w-80"
       role="alert"
     >
-      <div>Valid Json Structure</div>
+      <div>Valid JSON structure</div>
     </div>
     <section class="row">
       <div id="source-code" class="col-lg-10 col-xl-10 col-sm-12 col-md-12 col-xs-12 col-sm-12">

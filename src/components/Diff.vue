@@ -47,9 +47,8 @@ five`
   </script>
   
   <style >
-  .ͼ1 .cm-gutter{
-  border-left: 1px solid gray;
-  }
+
+  
   .ͼ1 .cm-changeGutter{
     border:none;
   }

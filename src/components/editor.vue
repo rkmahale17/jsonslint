@@ -1,10 +1,10 @@
 <template>
-  <div> 
+  <div class="editor"> 
    
 
     <div
       v-if="error"
-      class="alert alert-danger d-flex align-items-center mt-4 w-80"
+      class="alert alert-danger d-flex align-items-center m-0 br-0"
       role="alert"
     >
       <div>
@@ -22,10 +22,10 @@
     </div>
     <div
       v-if="success"
-      class="alert alert-success d-flex align-items-center mt-4 w-80"
+      class="alert alert-success d-flex align-items-center m-0 br-0"
       role="alert"
     >
-      <div>Valid Json Structure</div>
+      <div>Valid JSON structure</div>
     </div>
     <section class="row">
       <div  class="col-lg-12 col-xl-12 col-sm-12 col-md-12 col-xs-12 col-sm-12">
@@ -195,7 +195,7 @@ methods: {
     const parsedJson = JSON.parse(this.code);
       this.code = JSON.stringify(parsedJson, null, 2);
 
-
+ 
   }
 
 
@@ -204,6 +204,15 @@ methods: {
 </script>
 
 <style >
+.editor{
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.br-0{
+  border-radius: 0px;
+
+}
 .floating-right{
   position: absolute;
   right:2rem;

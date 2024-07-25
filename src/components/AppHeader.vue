@@ -65,7 +65,7 @@ a:hover{
 .active-link{
   border-bottom: 4px solid blue !important;
   box-sizing: border-box;
-  background: #d9d9f5 !important;
+  padding: 10px;
 }
 a{
   border-bottom: 4px solid transparent !important;
@@ -79,9 +79,11 @@ li{
 .navbar{
   box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 5px 0 rgba(0,0,0,.23);
   height:56px !important;
+   background-color: #fff;
 }
 #navbarNav{
   justify-content: flex-end;
+  z-index: 10;
 }
 .nav-link{
   color:var(--bs-navbar-brand-color);

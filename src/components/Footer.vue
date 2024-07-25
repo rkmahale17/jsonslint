@@ -4,22 +4,7 @@
     <div class="container">
         <div class="footer-top">
             <div class="row">
-                <div class="col-md-6 col-lg-3 about-footer">
-                    <h3>Contact Us </h3>
-                    <ul>
-                        <li>
-                          <i class="fas fa-email fa-flip-horizontal">
-
-                          </i>
-                          mahale.usha19@gmail.com
-                        </li>
-                        <li><i class="fas fa-map-marker-alt"></i>
-                            Hinjewadi,
-                            <br/>Megapolis,
-                            <br/>Phase 3
-                        </li>
-                    </ul>
-                </div>
+                
                 <div class="col-md-6 col-lg-3 page-more-info">
                     <div class="footer-title">
                         <h4>Page links</h4>

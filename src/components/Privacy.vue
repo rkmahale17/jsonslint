@@ -40,6 +40,8 @@
   }
   .privacy-policy {
     padding: 20px;
+    margin: 20px auto;
+  background: #fff;
   }
   .privacy-policy h1 {
     font-size: 24px;

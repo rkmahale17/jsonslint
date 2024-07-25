@@ -1,7 +1,7 @@
 
 
 <template>
-    <div> 
+    <div class="editor-2"> 
      
   
       <div
@@ -27,7 +27,7 @@
         class="alert alert-success d-flex align-items-center mt-4 w-80"
         role="alert"
       >
-        <div>Valid Json Structure</div>
+        <div>Valid JSON structure</div>
       </div>
       <section class="row">
         <div  class="col-lg-10 col-xl-10 col-sm-12 col-md-12 col-xs-12 col-sm-12">
@@ -241,6 +241,12 @@ this.setEditorVal(val)
    .h-lg-80{
     height:80vh;
    }
+}
+.editor-2{
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background: #fff;
 }
 #heading {
   text-align: center;
