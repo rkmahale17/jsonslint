@@ -13,7 +13,7 @@
     </div>
     <div
       v-if="isShowAlert"
-      class="alert alert-success d-flex align-items-center mt-4 w-80"
+      class="alert alert-success d-flex align-items-center m-0 br-0"
       role="alert"
     >
       <div>
@@ -28,7 +28,7 @@
       <div>Valid JSON structure</div>
     </div>
     <section class="row">
-      <div  class="col-lg-12 col-xl-12 col-sm-12 col-md-12 col-xs-12 col-sm-12">
+      <div  class="col-lg-12 col-xl-12 col-sm-12 col-md-12 col-xs-12 col-sm-12 pos-relative" >
         <div class="floating-right mt-2">
           <div class="d-block">
               <button
@@ -204,6 +204,9 @@ methods: {
 </script>
 
 <style >
+.pos-relative{
+  position:relative;
+}
 .editor{
   margin: 20px auto;
   border: 1px solid #ccc;

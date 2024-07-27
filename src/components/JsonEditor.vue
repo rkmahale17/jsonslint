@@ -1,5 +1,5 @@
 <template>
-  <div> 
+  <div > 
    
 
     <div
@@ -11,7 +11,7 @@
         {{ error }}
       </div>
     </div>
-	<div
+	  <div
       v-if="isShowAlert"
       class="alert alert-success d-flex align-items-center mt-4 w-80"
       role="alert"
