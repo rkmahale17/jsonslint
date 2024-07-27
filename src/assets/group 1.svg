@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="163" height="84" viewBox="0 0 163 84">
+  <g id="Group_1" data-name="Group 1" transform="translate(-239 277)">
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(239 -277)" fill="#f86c05" stroke="#fff" stroke-linecap="round" stroke-width="1">
+      <rect width="163" height="75" rx="15" stroke="none"/>
+      <rect x="0.5" y="0.5" width="162" height="74" rx="14.5" fill="none"/>
+    </g>
+    <text id="JSONS_LINT_" data-name="JSONS LINT
+" transform="translate(269 -260)" fill="#fff" font-size="18" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="19">JSONS LINT</tspan></text>
+    <text id="Json_Lint_Validator_formatter_" data-name="Json Lint, Validator, formatter
+" transform="translate(265 -234)" fill="#fff" font-size="7" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="11.184" y="7">Json Lint, Validator, formatter</tspan></text>
+    <text id="_" data-name="}" transform="translate(390 -219)" fill="#fff" font-size="66" font-family="InaiMathi"><tspan x="-9.075" y="0">}</tspan></text>
+    <text id="_2" data-name="{" transform="translate(251 -219)" fill="#fff" font-size="66" font-family="InaiMathi"><tspan x="-9.075" y="0">{</tspan></text>
+  </g>
+</svg>

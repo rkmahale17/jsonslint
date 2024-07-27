@@ -4,15 +4,20 @@
   <h1 class="title">
     Features
   </h1>
-   <div class="d-flex">
-    <h6 class="mx-2"> <span class="badge  text-bg-success">JSON Lint</span></h6>
-  <h6 class="mx-2"> <span class="badge   text-bg-success">JSON Fromatter</span></h6>
+   <div class="d-block">
+    <div class="d-flex">
+      <h6 class="mx-2"> <span class="badge  text-bg-success">JSON Lint</span></h6>
+      <h6 class="mx-2"> <span class="badge   text-bg-success">JSON Fromatter</span></h6>
+    </div>
+  <div class="d-flex">
   <h6 class="mx-2"> <span class="badge  text-bg-success">JSON Validator</span></h6>
-
   <h6 class="mx-2"> <span class="badge  text-bg-success">JSON Checker</span></h6>
+  </div>
+  <div class="d-flex">
   <h6 class="mx-2"> <span class="badge  text-bg-success">JSON Syntax Verifier</span></h6>
   <h6 class="mx-2"> <span class="badge  text-bg-success">JSON Schema Validator</span></h6>
-   </div>
+</div>   
+</div>
 
  </div>
  <br>

@@ -19,8 +19,21 @@
 </nav> -->
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <RouterLink class="navbar-brand" :to="`/`">
-      { Jsons Lint }
+    <RouterLink class="navbar-brand" :to="`/`" >
+      <div class="d-flex">
+        <div class="d-flex"><span style="background: #0ed901;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center; "> <span style="
+    text-align: center;
+    font-size: larger;">{ }</span></span></div>
+      <span class="mx-2 pt-1">JSONS LINT</span>
+      </div>
+      
+      
+    
     </RouterLink> 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,15 +70,18 @@
 <style scoped>
 
 a:hover{
-  border-bottom: 4px solid blue !important;
+  border-bottom: 4px solid #0fd900 !important;
   box-sizing: border-box;
   background: #d9d9f5;
+  padding:4px;
+  padding-top:10px
 
 }
 .active-link{
-  border-bottom: 4px solid blue !important;
+  border-bottom: 3px solid #0fd900 !important;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 4px;
+  padding-top:10px
 }
 a{
   border-bottom: 4px solid transparent !important;
