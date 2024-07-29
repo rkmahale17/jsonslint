@@ -1,6 +1,6 @@
 <template>
   <div>
-  <footer>
+  <footer class="footer">
     <div class="container">
         <div class="footer-top">
             <div class="row">
@@ -12,7 +12,7 @@
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li>    <RouterLink class="text-decoration-none navbar-brand home-title" :to="`/about`" >About</RouterLink></li>
-                        <li>    <RouterLink class="text-decoration-none navbar-brand home-title" :to="`/privacy`">Privacy</RouterLink></li>
+                        <li>    <RouterLink class="text-decoration-none navbar-brand home-title" :to="`/privacy`">Privacy Policy</RouterLink></li>
                     </ul>
                 </div>
 
@@ -64,14 +64,16 @@ export default {
 
   methods: {
     scrollToTop() {
-    window.scrollTo(0,0);
+    // window.scrollTo(0,0);
   }
   }
   }
 </script>
 
 <style scoped>
-
+.footer{
+  margin-top:20px;
+}
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 h1,
         h2,
@@ -126,25 +128,22 @@ h1,
     transition: all 0.8s;
 }
 .red-btn {
-    background: #ed1b24;
-    border: 2px solid #ed1b24;
+    background: rgb(14, 217, 1);
+    border: 2px solid rgb(14, 217, 1);
     color: #fff;
 }
 
 .red-btn:hover{
-    background: #1c376c;
+    background: rgb(14, 217, 1);
     color: #fff;
     border-color: #ffffff;
 }
 
 /*---------footer---------*/
 footer {
-    background-color: #222023;
-    background-image: -webkit-linear-gradient( top, #222023, #1e2c47 );
-    background-image: -moz-linear-gradient( top, #222023, #1e2c47 );
-    background-image: -o-linear-gradient( top, #222023, #1e2c47 );
-    background-image: linear-gradient( to bottom, #222023, #1e2c47 );
-    color: #fff;
+    background-color: white;
+   
+    color: black;
     padding: 22px 0;
     font-size: 17px;
 }
@@ -175,14 +174,14 @@ footer h4 {
 }
 
 footer a {
-    color: #fff;
+    color: black
 }
 
 footer a:hover {
     color: #03a9f4
 }
 .footer-title {
-    border-bottom: 2px solid #a61f2d;
+    border-bottom: 2px solid rgb(14, 217, 1);
     padding-bottom: 25px;
     margin-bottom: 35px;
 }

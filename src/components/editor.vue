@@ -208,7 +208,6 @@ methods: {
   position:relative;
 }
 .editor{
-  margin: 20px auto;
   border: 1px solid #ccc;
   background: #fff;
 }

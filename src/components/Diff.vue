@@ -1,22 +1,20 @@
 <template>
     <div>
       <div ref="mergeView" style="height:80vh"></div>
+      <div style="height:7vh; background:white"></div>
     </div>
   </template>
   
   <script>
 import {MergeView} from "@codemirror/merge"
-import {EditorView} from "@codemirror/view"
 import {basicSetup} from 'codemirror'
-import {EditorState} from "@codemirror/state"
 import { oneDark } from "@codemirror/theme-one-dark"
   export default {
     mounted() {
-        let doc = `one
-two
-three
-four
-five`
+        let doc = `{
+          attr1: "attr1Value",
+          attr2: "attr2Value"
+}`
 
       const leftEditor = this.$refs.mergeView.appendChild(document.createElement('div'));
       const rightEditor = this.$refs.mergeView.appendChild(document.createElement('div'));
@@ -30,7 +28,11 @@ five`
     
   },
   b: {
-    doc: doc.replace(/t/g, "T") + "\nSix",
+    doc: `{
+          attr1: "value1",
+          attr2: "value2",
+          attr3: "value3"
+}`,
     extensions: [
       basicSetup,
       oneDark
@@ -53,7 +55,7 @@ five`
     border:none;
   }
   .cm-mergeView .ͼ1 .cm-scroller{
-    height : 60vh !important
+    height : 80vh !important
   }
   /* Any custom styles you want to apply to your component */
   </style>

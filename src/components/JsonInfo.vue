@@ -67,7 +67,7 @@ export default {
     getCleanUrl(id) {
       const url ='/qa/'+id;
       // Encode special characters in the URL using encodeURIComponent
-      return url.split(' ').join('_')
+      return url.split(' ').join('-')
     }
   }
 }

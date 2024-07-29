@@ -4,12 +4,12 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <header>
+  <header class="fix-toolbar">
 
     <AppHeader/>
    
   </header>
-  <main class=" m-auto mt-5 container">
+  <main class=" m-auto mt-5 container main-content">
   <RouterView />
  </main>
  <Footer />
@@ -21,7 +21,9 @@ import Footer from './components/Footer.vue'
 header {
   line-height: 1.5;
 }
-
+.main-content {
+  padding-top: 52px !important;
+}
 
 .logo {
   display: block;
@@ -37,7 +39,12 @@ header {
   .logo {
     
   }
-
+  .fix-toolbar{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 9;
+  }
   header .wrapper {
     /* display: flex;
     place-items: flex-start;

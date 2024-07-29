@@ -61,7 +61,7 @@
     mounted() {
     // Access route parameter using this.$route.params
     this.load =true;
-    this.id = (this.$route.params.id).split("_").join(" ");
+    this.id = (this.$route.params.id).split("-").join(" ");
   }
   };
   </script>
@@ -69,11 +69,10 @@
   <style scoped>
   .qa-wrapper{
     margin:auto;
+  background: #fff;
+
     max-width: 800px;
-    .qa{
-      max-width:600px;
-    }
-   
+    padding:20px;
   }
   .bg-black{
     background: black;

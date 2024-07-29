@@ -26,6 +26,7 @@ export default {
 
 <style >
 .about {
+  margin-top:0px !important;
   margin: 20px auto;
   padding:20px;
   background: #fff;

@@ -40,6 +40,8 @@
   }
   .privacy-policy {
     padding: 20px;
+  margin-top:0px !important;
+
     margin: 20px auto;
   background: #fff;
   }

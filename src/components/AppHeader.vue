@@ -48,16 +48,16 @@
           <RouterLink class="nav-link" activeClass="active-link" :to="`/compare-code`">Compare Code</RouterLink> 
         </li>
         <li class="nav-item">
-          <RouterLink class="nav-link" activeClass="active-link" :to="`/about`">About</RouterLink> 
+          <RouterLink class="nav-link" activeClass="active-link" :to="`/qa/What-is-JSON-Formatter-and-how-does-it-work`">Json Q&A </RouterLink> 
         </li>
+        
         <li class="nav-item">
-          <RouterLink class="nav-link" activeClass="active-link" :to="`/privacy`">Privacy Policy</RouterLink> 
+        
+          <a href="https://insidefulreview.blogspot.com" target="_blank"  class="nav-link" rel="noopener noreferrer">Blog</a>
 
         </li>
-        <li class="nav-item">
-          <RouterLink class="nav-link" activeClass="active-link" :to="`/qa/What_is_JSON_Formatter_and_how_does_it_work`">Json Q&A </RouterLink> 
-
-        </li>
+        
+       
       
       </ul>
     </div>
@@ -91,6 +91,9 @@ li{
   border-radius: 1px !important;
   text-decoration: none !important;
   padding: 8px 15px !important;
+}
+.navbar-toggler{
+  margin-bottom: 10px !important;
 }
 .navbar{
   box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 5px 0 rgba(0,0,0,.23);

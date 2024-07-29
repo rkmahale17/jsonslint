@@ -5,6 +5,7 @@ import Privacy from '../components/Privacy.vue'
 import qa from '../components/qa.vue'
 import editor2 from '@/components/editor2.vue'
 import DiffConfigList from '@/components/Diff.vue'
+import TermsOfService from '../components/TermsOfService.vue'
 import.meta.env.BASE_URL
 const routes = [
     {
@@ -34,6 +35,12 @@ const routes = [
       component: qa
     },
     {
+      path: '/terms-of-service',
+      name: 'TermsOfService',
+      component: TermsOfService
+      
+    },
+    {
       path: '/editor-2',
       name: 'editor2',
       component: editor2    },
@@ -45,17 +52,17 @@ const routes = [
     routes,
     mode:'history',
     scrollBehavior (to, from, savedPosition) {
-      document.getElementById('app').scrollIntoView();
+      document.getElementsByTagName('html')[0].scrollIntoView();
       
     }
   })
   
-  router.beforeEach((to, from, next) => {
-    setTimeout(function () {
-      window.scrollTo(0, 0);
-      next();
-  },2);
+  // router.beforeEach((to, from, next) => {
+  //   setTimeout(function () {
+  //     window.scrollTo(0, 0);
+  //     next();
+  // },2);
 
-  });
+  // });
   
   export default router
