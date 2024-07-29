@@ -2,7 +2,7 @@ export const qaMapping =[
     {
       "id": "What are the rules of JSON syntax?",
       "question": "What are the rules of JSON syntax",
-      "answer": "JSON syntax includes key-value pairs separated by colons, objects enclosed in braces, arrays in square brackets, and data separated by commas."
+      "answer": "JSON syntax includes key value pairs separated by colons, objects enclosed in braces, arrays in square brackets, and data separated by commas."
     },
     {
       "id": "What are JSON files?",
@@ -17,7 +17,7 @@ export const qaMapping =[
     {
       "id": "What are the benefits of using JSON?",
       "question": "What are the benefits of using JSON",
-      "answer": "JSON is easy to use, lightweight, and platform-independent. It offers faster data transmission, better compatibility with modern programming languages, and support for various data types."
+      "answer": "JSON is easy to use, lightweight, and platform independent. It offers faster data transmission, better compatibility with modern programming languages, and support for various data types."
     },
     
     {
@@ -58,7 +58,7 @@ export const qaMapping =[
     {
       "id": "What is JSON Formatter and how does it work?",
       "question": "What is JSON Formatter and how does it work",
-      "answer": "JSON Formatter is a tool for formatting and validating JSON data, making it easier to read and debug. It ensures that JSON data is well-structured and syntactically correct."
+      "answer": "JSON Formatter is a tool for formatting and validating JSON data, making it easier to read and debug. It ensures that JSON data is well structured and syntactically correct."
     },
     {
       "id": "What is the JSON file's extension?",
@@ -73,7 +73,7 @@ export const qaMapping =[
     {
       "id": "Explain JSONP.",
       "question": "Explain JSONP",
-      "answer": "JSONP, or JSON with padding, circumvents cross-domain restrictions in web browsers by allowing JSON replies from different domains."
+      "answer": "JSONP, or JSON with padding, circumvents cross domain restrictions in web browsers by allowing JSON replies from different domains."
     },
     {
       "id": "What is JSON's MIME type?",
@@ -83,7 +83,7 @@ export const qaMapping =[
     {
       "id": "What is JSON?",
       "question": "What is JSON",
-      "answer": "JSON serves as a faster and more accessible data exchange format. It is platform and language-independent, serving as a wire protocol for data exchange between processes or applications."
+      "answer": "JSON serves as a faster and more accessible data exchange format. It is platform and language independent, serving as a wire protocol for data exchange between processes or applications."
     },
     {
       "id": "What are some widely used JSON libraries in .NET?",
@@ -118,7 +118,7 @@ export const qaMapping =[
     {
       "id": "Why is JSON used in PHP?",
       "question": "Why is JSON used in PHP",
-      "answer": "In PHP, JSON is used for encoding and decoding data, enabling seamless interaction with JSON-based APIs and web services."
+      "answer": "In PHP, JSON is used for encoding and decoding data, enabling seamless interaction with JSON based APIs and web services."
     },
     {
       "id": "Can comments be added to a JSON file?",
@@ -126,9 +126,9 @@ export const qaMapping =[
       "answer": "JSON does not support comments within its syntax. Comments can be stored as data within the JSON structure, but they are ignored during JSON processing."
     },
     {
-      "id": "Explain JSON-RPC and JSON Parser.",
-      "question": "Explain JSON-RPC and JSON Parser",
-      "answer": "JSON-RPC is a remote procedure call protocol using JSON format, while JSON Parser is a tool for parsing JSON data, supported by JavaScript, PHP, and jQuery."
+      "id": "Explain JSON RPC and JSON Parser.",
+      "question": "Explain JSON RPC and JSON Parser",
+      "answer": "JSON RPC is a remote procedure call protocol using JSON format, while JSON Parser is a tool for parsing JSON data, supported by JavaScript, PHP, and jQuery."
     },
     {
       "id": "What is the purpose of the Newtonsoft Net framework?",
@@ -143,7 +143,7 @@ export const qaMapping =[
     {
       "id": "What are the limitations of JSONP?",
       "question": "What are the limitations of JSONP",
-      "answer": "JSONP is limited to GET requests and read-only APIs. It cannot be used for POST or PUT requests due to browser constraints."
+      "answer": "JSONP is limited to GET requests and read only APIs. It cannot be used for POST or PUT requests due to browser constraints."
     },
     {
       "id": "Which function is used to turn a JSON string into an object?",
@@ -158,17 +158,17 @@ export const qaMapping =[
     {
       "id": "Differentiate between JSON and JSONP",
       "question": "Differentiate between JSON and JSONP",
-      "answer": "JSON is a data format for exchanging information, while JSONP is a technique for making cross-domain ajax calls without violating the same-origin policy."
+      "answer": "JSON is a data format for exchanging information, while JSONP is a technique for making cross domain ajax calls without violating the same origin policy."
     },
     {
       "id": "Describe the benefits and characteristics of JSON.",
       "question": "Describe the benefits and characteristics of JSON",
-      "answer": "JSON offers simplicity, speed, and cross-platform compatibility. It supports various data types and is widely used for data transmission."
+      "answer": "JSON offers simplicity, speed, and cross platform compatibility. It supports various data types and is widely used for data transmission."
     },
     {
       "id": "What is a JSON Viewer?",
       "question": "What is a JSON Viewer",
-      "answer": "A JSON Viewer is a tool that renders JSON data in a visually appealing and user-friendly format, making it easier to navigate and understand complex JSON structures."
+      "answer": "A JSON Viewer is a tool that renders JSON data in a visually appealing and user friendly format, making it easier to navigate and understand complex JSON structures."
     },
     {
       "id": "Why use JSON instead of XML?",
@@ -188,7 +188,7 @@ export const qaMapping =[
     {
       "id": "What do JSON and XML have in common?",
       "question": "What do JSON and XML have in common",
-      "answer": "Both JSON and XML are used for data exchange between systems, are human-readable, language-agnostic, support nested structures, and are easy to parse with various programming languages."
+      "answer": "Both JSON and XML are used for data exchange between systems, are human readable, language agnostic, support nested structures, and are easy to parse with various programming languages."
     }
   ];
 
@@ -212,7 +212,7 @@ export const jsonSample = {
   "unicodeString": "Unicode characters: \u03B1\u03B2\u03B3",
   "escapeCharacters": "Escaped characters: \" \\ \/ \b \f \n \r \t",
   "url": "https://www.example.com",
-  "date": "2024-03-31",
+  "date": "2024 03 31",
   "nestedArray": [
     [1, 2, 3],
     [true, false, null]
