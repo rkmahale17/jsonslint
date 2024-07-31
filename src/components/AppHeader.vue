@@ -45,7 +45,7 @@
           <RouterLink class="nav-link" activeClass="active-link" :to="`/`">Format Json</RouterLink> 
         </li>
         <li class="nav-item">
-          <RouterLink class="nav-link" activeClass="active-link" :to="`/compare-code`">Compare Code</RouterLink> 
+          <RouterLink class="nav-link" activeClass="active-link" :to="`/compare-code`">Diff Checker</RouterLink> 
         </li>
         <li class="nav-item">
           <RouterLink class="nav-link" activeClass="active-link" :to="`/qa/What-is-JSON-Formatter-and-how-does-it-work`">Json Q&A </RouterLink> 

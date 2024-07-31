@@ -251,7 +251,6 @@ this.setEditorVal(val)
 #heading {
   text-align: center;
   font-size: 26px;
-  font-family: arial, sans-serif;
   font-weight: 300;
   color: #00c1ff;
 }
@@ -292,7 +291,6 @@ this.setEditorVal(val)
 
   height: auto;
 
-  font-family: arial;
 
   color: #fff;
 

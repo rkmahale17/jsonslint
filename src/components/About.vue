@@ -1,20 +1,27 @@
 <template>
   <div class="about json-card ">
-    <h1>About JSON Formatter & Linter</h1>
-        <p>Welcome to JSON Formatter & Linter, your go-to tool for formatting and validating JSON data quickly and easily.</p>
-        <h2>Features:</h2>
-        <ul>
-            <li><strong>Format JSON Data:</strong> Paste or type your JSON data into the input area, and with the click of a button, we'll format it into a human-readable format with proper indentation.</li>
-            <li><strong>Lint JSON Data:</strong> Ensure your JSON data is well-formed and error-free. Our linter checks for syntax errors and provides helpful feedback to assist in debugging.</li>
-            <li><strong>Syntax Highlighting:</strong> Enjoy improved readability with syntax highlighting, making it easier to distinguish between different elements of your JSON data.</li>
-            <li><strong>Copy to Clipboard:</strong> Need to share your formatted JSON data? Simply click the "Copy" button to quickly copy it to your clipboard for easy sharing and pasting.</li>
-        </ul>
-        <h2>Why Use JSON Formatter & Linter?</h2>
-        <ul>
-            <li><strong>Save Time:</strong> No more manually formatting JSON data or hunting down syntax errors. Our tool streamlines the process, saving you valuable time.</li>
-            <li><strong>Improve Productivity:</strong> Whether you're a developer working with JSON data daily or just need to format JSON occasionally, our tool helps improve your productivity and efficiency.</li>
-            <li><strong>Enhance Readability:</strong> By formatting your JSON data into a clear and structured format, it becomes easier to read and understand, aiding in collaboration and communication.</li>
-        </ul>
+    <h4>About Us </h4>
+
+    <p>
+      Our aim is to provide a comprehensive suite of JSON utilities designed to simplify and enhance your development experience. From JSON linting and formatting to schema validation and diff checking, our tools are crafted to ensure accuracy, efficiency, and ease of use. Whether you're debugging, validating, or comparing JSON data, our website offers reliable solutions to streamline your workflow and maintain the highest standards of data integrity. We are committed to supporting developers, data analysts, and anyone working with JSON by offering top-notch tools that make managing JSON data effortless and effective
+    </p>
+
+    <hr>
+   <h5>Introduction to JSON Utilities</h5>
+Welcome to our comprehensive suite of JSON utilities, where we streamline your development process with advanced tools for formatting, linting, schema checking, and diff checking. Our website is designed to enhance productivity and ensure the highest quality of JSON data handling. Whether you're a developer, data analyst, or just someone working with JSON files, our tools are here to make your life easier.
+
+<hr>
+<h5> JSON Formatting Made Simple</h5>
+Our JSON Formatter is the perfect tool for tidying up your JSON data. It automatically organizes your JSON into a readable format, making it easier to read and understand. This feature is particularly useful for debugging and presenting your JSON data in a clean, structured way. Say goodbye to messy, unformatted JSON files and hello to clear, beautifully formatted data.
+<hr>
+<h5> Efficient JSON Linting</h5>
+With our JSON Linter, you can quickly identify and fix errors in your JSON code. It scans your JSON for any syntax errors or potential issues, providing you with detailed feedback to ensure your code is error-free. This tool is essential for maintaining the integrity and accuracy of your JSON data, helping you avoid common pitfalls and improve your coding efficiency.
+<hr>
+<h5>Comprehensive Schema Validation</h5> 
+Our JSON Schema Validator is designed to verify that your JSON data adheres to a predefined schema. This ensures that your data is consistent and meets all necessary requirements. By using our schema validation tool, you can confidently validate your JSON data against any schema, ensuring compliance and reducing the risk of data errors.
+<hr>
+<h5>Advanced JSON Diff Checker</h5>
+The JSON Diff Checker is a powerful feature that allows you to compare two JSON files side by side. It highlights the differences between the files, making it easy to identify changes and discrepancies. This tool is invaluable for version control, debugging, and ensuring consistency across different versions of your JSON data. With our diff checker, you can easily track changes and maintain data integrity.
   </div>
 </template>
 
@@ -26,59 +33,26 @@ export default {
 
 <style >
 .about {
-  margin-top:0px !important;
-  margin: 20px auto;
-  padding:20px;
-  background: #fff;
-  font-size: 16px;
-
-
-}
-p{
-    color:rgb(45 45 50)
-  }
-.about
-   {
+    background: white;
     padding: 20px;
-    margin: 20px auto;
-  background: #fff;
-  }
-.about h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-.about h3{
-    font-size: 16px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-
-.about h2 {
-    font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    border-bottom:1px solid rgb(225, 223, 223)
-  }
-.about  p {
-    font-size: 14px;
-    margin-bottom: 10px;
+    h5 {
+        margin-top:20px;
+        font-size:18px;
+    }
   }
   
-.about h2 {
-  margin-bottom: 10px;
-}
-
-.about h3 {
-  margin-top: 20px;
-  margin-bottom: 5px;
-}
-
-.about ul {
-  list-style-type: none;
-  padding-left: 20px;
-}
-
-.about li {
-  margin-bottom: 10px;
-}
+  .about h1,
+  .about h3 {
+    color: #333;
+  }
+  
+  .about p,
+  .about ul {
+    margin-bottom: 15px;
+  }
+  
+  .about ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
 </style>

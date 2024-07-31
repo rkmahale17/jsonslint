@@ -1,50 +1,36 @@
 <template>
   <div class="json-info">
     <div class="m-2">
-  <h1 class="title">
-    Features
-  </h1>
+  <h3 class="title">
+    Why to use JSONS Lint tool ?
+  </h3>
    <div class="d-block">
-    <div class="d-flex">
-      <h6 class="mx-2"> <span class="badge  text-bg-success">JSON Lint</span></h6>
-      <h6 class="mx-2"> <span class="badge   text-bg-success">JSON Fromatter</span></h6>
-    </div>
-  <div class="d-flex">
-  <h6 class="mx-2"> <span class="badge  text-bg-success">JSON Validator</span></h6>
-  <h6 class="mx-2"> <span class="badge  text-bg-success">JSON Checker</span></h6>
-  </div>
-  <div class="d-flex">
-  <h6 class="mx-2"> <span class="badge  text-bg-success">JSON Syntax Verifier</span></h6>
-  <h6 class="mx-2"> <span class="badge  text-bg-success">JSON Schema Validator</span></h6>
-</div>   
+  <p>
+
+Using our website for your JSON needs ensures a seamless and efficient experience, leveraging a comprehensive suite of tools designed for all your JSON requirements. Our JSON formatter swiftly organizes your JSON data into an easily readable format, eliminating any confusion that might arise from disorganized code. With our JSON lint, you can quickly identify and fix any issues, ensuring your JSON is clean and error-free. Whether you need sample data for testing or examples to learn from, our JSON sample data feature provides a variety of ready-to-use templates. Additionally, our JSON format checker meticulously verifies your JSON structure, helping you maintain consistency and accuracy in your projects.
+
+  </p>
+  <p>Our platform goes beyond basic formatting and linting with advanced features like syntax verification and JSON schema validation. The syntax verifier checks your JSON code for any syntax errors, ensuring it adheres to proper standards and preventing potential issues in your applications. Our JSON schema validator is indispensable for developers needing to validate their JSON data against predefined schemas, guaranteeing data integrity and compatibility. By using our website, you not only save time but also enhance the quality and reliability of your JSON data, making it the ultimate destination for all your JSON formatting, checking, and validation needs.
+</p>
+  
 </div>
+<hr>
 
  </div>
- <br>
-    <h2 class="title">JSON Format Information</h2>
-    <p class="description">
-      JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language.
-    </p>
+ 
+ <JsonValidationPage></JsonValidationPage>
+
     <br>
-    <div class="error-list">
-      <h2 class="title">Common Errors</h2>
-      <ul>
-        <li>Missing or misplaced commas</li>
-        <li>Missing or incorrect quotation marks around keys or values</li>
-        <li>Invalid escape characters</li>
-        <li>Trailing commas</li>
-        <li>Incorrect data types (e.g., using a string instead of a number)</li>
-      </ul>
-    </div>
+    
     <div class="my-4">
-      <h2 class="title">Json Questions </h2>
+      <h5>Common Json Questions </h5>
      <div class="list-group">
       <router-link :to="getCleanUrl(questions.question)" class="list-group-item list-group-item-action text-bold" v-for="questions in qa" v-bind:key="questions.id">{{ questions.id }}</router-link>
 
 </div>
   </div>
   <div class="additional-info">
-      <h3 class="title">Additional Information</h3>
+      <h3 >Additional Information</h3>
       <p>
         For more information about JSON format, refer to the <a href="https://www.json.org/" target="_blank" rel="noopener noreferrer">JSON.org</a> website.
       </p>
@@ -55,9 +41,12 @@
 
 <script>
 import { qaMapping } from '@/const';
-
+import JsonValidationPage from  "../components/JsonValidationPage.vue"
 export default {
   name: 'JsonInfo',
+  components: {
+    JsonValidationPage
+  },
   data() {
     return {
        qa:qaMapping
@@ -75,7 +64,6 @@ export default {
 
 <style scoped>
 .json-info {
-  font-family: Arial, sans-serif;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -94,7 +82,7 @@ h1{
 }
 
 .title {
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
