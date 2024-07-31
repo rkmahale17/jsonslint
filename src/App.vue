@@ -9,7 +9,7 @@ import Footer from './components/Footer.vue'
     <AppHeader/>
    
   </header>
-  <main class=" m-auto mt-5 container main-content">
+  <main class=" m-auto mt-lg-5 mt-xl-5  container main-content">
   <RouterView />
  </main>
  <Footer />

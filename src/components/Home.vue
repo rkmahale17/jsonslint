@@ -1,16 +1,14 @@
 <script setup lang="ts">
-import JsonEditor from './JsonEditor.vue'
-import JsonInfo from './JsonInfo.vue'
-import editor from './editor.vue'
-import About from './About.vue'
-
+import ImportantMessage from './Importantmsg.vue';
+import JsonInfo from './JsonInfo.vue';
+import editor from './editor.vue';
 
 </script>
 
 <template>
 <main>
  
-
+  <ImportantMessage message="We never save your data. Happy Formatting!"></ImportantMessage>
    <editor></editor>
     <!-- <json-editor/> -->
     

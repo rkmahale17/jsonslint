@@ -9,6 +9,11 @@ import TermsOfService from '../components/TermsOfService.vue'
 import.meta.env.BASE_URL
 const routes = [
     {
+      path: '/format-json',
+      name: 'Home',
+      component: Home
+    },
+    {
       path: '/',
       name: 'Home',
       component: Home
@@ -24,7 +29,7 @@ const routes = [
       component: About
     },
     {
-      path: '/compare-code',
+      path: '/diff-checker',
       name: 'DiffConfigList',
       component: DiffConfigList
     },

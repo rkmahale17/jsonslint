@@ -45,13 +45,30 @@
         <hr>
         <div class="footer-bottom">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 d-flex justify-content-start">
+                   <RouterLink class="navbar-brand" :to="`/`" >
+      <div class="d-flex">
+        <div class="d-flex"><span style="background: #0ed901;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center; "> <span style="
+    text-align: center;
+    font-size: x-large;">{ }</span></span></div>
+      <span class="mx-2 pt-2">JSONS LINT</span>
+      </div>
+      
+      
+    
+    </RouterLink> 
+    <div class="d-flex pt-2 justify-conetent-start text-sm">
                   <RouterLink class="text-decoration-none navbar-brand home-title" :to="`/privacy`">Policy</RouterLink>
                   |
                   <RouterLink class="text-decoration-none navbar-brand home-title" :to="`/terms-of-service`">Terms</RouterLink>
-
                 </div>
-                <div class="col-sm-6 d-flex justify-content-end">
+                </div>
+                <div class="col-sm-6 d-flex justify-content-center pt-2">
                     <p>JSONS LINT @ 2024 All rights reserved</p>
                 </div>
             </div>
@@ -60,7 +77,6 @@
 </footer>
 
   
-  <div><br></div>
 </div>
   </template>
 

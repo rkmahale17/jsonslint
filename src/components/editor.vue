@@ -47,6 +47,8 @@
           >
           <i class="bi bi-search"></i>
           </button> 
+          <JsonFileUploader @file-uploaded="updateFile" class="mt-1"/>
+
           
           </div>
        
@@ -85,6 +87,8 @@
           class="btn   mt-2 btn btn-outline-primary btn-sm m-2" type="button">
             Clear 
           </button>
+
+
         </div>
         
           
@@ -104,12 +108,12 @@
   import {json, jsonParseLinter} from '@codemirror/lang-json'
   import { oneDark } from '@codemirror/theme-one-dark'
   import { EditorView } from '@codemirror/view'
-import { lintGutter, linter, openLintPanel } from "@codemirror/lint";
+import { lintGutter, linter } from "@codemirror/lint";
 import {jsonSample} from '../const';
-
+import JsonFileUploader from "./UploadFile.vue"
 import Linter from "eslint4b-prebuilt";
   export default {
-      components:{Codemirror},
+      components:{Codemirror, JsonFileUploader},
   data(){
   return {
     code: "{\n\t\n}",
@@ -131,6 +135,11 @@ mounted() {
   });
 },
 methods: {
+  updateFile(fileData){
+
+      this.code = JSON.stringify(fileData, null, 2);
+ 
+  },
   handleReady(payload) {
     this.view = payload.view;
   },

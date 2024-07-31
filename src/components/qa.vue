@@ -9,11 +9,11 @@
 
 <br>
 
-   <h3> 
+   <h5> 
 
 
     More questions and answer
-   </h3>
+   </h5>
    <div class="accordion my-3" id="accordionExample">
   <div class="accordion-item" v-for="(item, index) in qaMapping" :key="item.id">
     <h2 class="accordion-header" :id="'heading' + index">
@@ -23,7 +23,7 @@
     </h2>
     <div :id="'collapse' + index" class="accordion-collapse collapse" :class="{ 'show': index === 0 }" :aria-labelledby="'heading' + index" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>{{ item.answer }}</strong>
+        <span>{{ item.answer }}</span>
       </div>
     </div>
   </div>
