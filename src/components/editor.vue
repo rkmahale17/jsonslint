@@ -34,20 +34,22 @@
               <button
             type="button"
             class="btn d-block  btn-primary  rounded" data-bs-toggle="copy" data-bs-placement="top"
-
+            data-toggle="tooltip" data-placement="left" title="Copy"
             @click="copyTextArea"
           >
           <i class="bi bi-copy"></i>
           </button> 
           <button
             type="button"
-            class="btn d-block btn-primary mt-1 rounded" data-bs-toggle="copy" data-bs-placement="top"
-
+            class="btn d-block btn-primary mt-1 rounded" data-bs-toggle="search" data-bs-placement="top"
+            data-toggle="tooltip" data-placement="left" title="Find"
             @click="triggerFind"
           >
           <i class="bi bi-search"></i>
           </button> 
-          <JsonFileUploader @file-uploaded="updateFile" class="mt-1"/>
+          <JsonFileUploader @file-uploaded="updateFile" class="mt-1"
+          data-toggle="tooltip" data-placement="left" title="Choose File"
+          />
 
           
           </div>
@@ -71,15 +73,15 @@
       <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 ">
         <div class="d-flex justify-content ">
           
-          <button @click="formatJson" class="btn   mt-2 btn btn-primary btn-sm m-2" type="button">
+          <button @click="formatJson" class="btn   mt-2  btn-primary btn-sm m-2" type="button">
             Format 
           </button> 
-          <button @click="lintJson" class="btn   mt-2 btn btn-primary btn-sm m-2" type="button">
+          <button @click="lintJson" class="btn   mt-2  btn-primary btn-sm m-2" type="button">
             Validate 
           </button> 
            
-          <button @click="copyJsonSample" class="btn   mt-2 btn btn-primary btn-sm m-2" type="button">
-            Sample 
+          <button @click="copyJsonSample" class="btn  btn-sm  mt-2  btn-primary m-2" style="white-space:nowrap" type="button">
+            Try Sample 
           </button> 
           <button 
           @click="clearInput"

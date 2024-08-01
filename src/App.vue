@@ -1,7 +1,4 @@
-<script setup lang="ts">
-import AppHeader from './components/AppHeader.vue'
-import Footer from './components/Footer.vue'
-</script>
+
 
 <template>
   <header class="fix-toolbar">
@@ -16,7 +13,16 @@ import Footer from './components/Footer.vue'
 
   
 </template>
-
+<script >
+import AppHeader from './components/AppHeader.vue'
+import Footer from './components/Footer.vue'
+export default {
+  components:{
+    AppHeader,
+    Footer
+  }
+}
+</script>
 <style scoped>
 header {
   line-height: 1.5;

@@ -44,6 +44,9 @@
         <li class="nav-item">
           <RouterLink class="nav-link" activeClass="active-link" :to="`/`">Format Json</RouterLink> 
         </li>
+        <!-- <li class="nav-item">
+          <RouterLink class="nav-link" activeClass="active-link" :to="`/json-path`">Json Path</RouterLink> 
+        </li> -->
         <li class="nav-item">
           <RouterLink class="nav-link" activeClass="active-link" :to="`/diff-checker`">Diff Checker</RouterLink> 
         </li>

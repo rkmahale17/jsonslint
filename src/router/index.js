@@ -5,19 +5,22 @@ import Privacy from '../components/Privacy.vue'
 import qa from '../components/qa.vue'
 import editor2 from '@/components/editor2.vue'
 import DiffConfigList from '@/components/Diff.vue'
-import TermsOfService from '../components/TermsOfService.vue'
+import TermsOfService from '@/components/TermsOfService.vue'
+import JsonPath from '@/components/JsonPath.vue'
 import.meta.env.BASE_URL
 const routes = [
-    {
-      path: '/format-json',
-      name: 'Home',
-      component: Home
-    },
+   
     {
       path: '/',
       name: 'Home',
       component: Home
     },
+    {
+      path: '/json-path',
+      name: 'JsonPath',
+      component: JsonPath
+    },
+    
     {
       path: '/privacy',
       name: 'privacy',

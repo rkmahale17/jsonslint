@@ -16,7 +16,7 @@
                       <!-- qa/What-is-JSON-Formatter-and-how-does-it-work -->
                        
                         <li>    <RouterLink class="text-decoration-none navbar-brand home-title nav-link" :to="`/`" >Home</RouterLink></li>
-                        <li>    <RouterLink class="text-decoration-none navbar-brand home-title nav-link" :to="`/compare-code`" >Diff Checker</RouterLink></li>
+                        <li>    <RouterLink class="text-decoration-none navbar-brand home-title nav-link" :to="`/diff-checker`" >Diff Checker</RouterLink></li>
                         <li>    <RouterLink class="text-decoration-none navbar-brand home-title nav-link" :to="`/qa/What-is-JSON-Formatter-and-how-does-it-work`" >Json Q&A</RouterLink></li>
 
           <a href="https://insidefulreview.blogspot.com" target="_blank"  class="nav-link" rel="noopener noreferrer">Blog</a>
