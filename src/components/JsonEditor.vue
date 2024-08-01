@@ -192,7 +192,6 @@ this.init();
     },
 
     init() {
-      console.log("init called");
       this.editor = this.$refs.codeblock;
       this.linenumbers = this.$refs.lineNumbers;
       var totallines = this.cutLines(this.editor.value),

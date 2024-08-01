@@ -18,7 +18,6 @@ import { oneDark } from "@codemirror/theme-one-dark"
 
       const leftEditor = this.$refs.mergeView.appendChild(document.createElement('div'));
       const rightEditor = this.$refs.mergeView.appendChild(document.createElement('div'));
-      console.log(MergeView);
       // Initialize MergeView
       const mergeView =   new MergeView({
   a: {

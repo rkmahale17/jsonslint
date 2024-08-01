@@ -182,10 +182,8 @@ this.setEditorVal(val)
 
     formatJson() {
         this.$nextTick(() => {
-            console.log(this.$refs.editor.codemirror);
         })
       try {
-        console.log(this.datCode)
         const parsedJson = JSON.parse(this.editorCode);
         this.editorCode = JSON.stringify(parsedJson, null, 2);
         this.success = true;

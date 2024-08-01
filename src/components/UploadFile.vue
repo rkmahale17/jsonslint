@@ -25,7 +25,6 @@
               const json = JSON.parse(e.target.result);
               this.$emit('file-uploaded', json);
             } catch (error) {
-                console.log(error);
               alert('Invalid JSON file.');
             }
           };
