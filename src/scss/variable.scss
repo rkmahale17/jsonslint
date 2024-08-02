@@ -1,0 +1,37 @@
+@import "~bootstrap/scss/bootstrap";
+
+:root {
+    --background-color-light: #ffffff;
+    --text-color-light: #333;
+    --background-color-pre-light:  #f4f4f4;
+    --background-bg-color-light: #e8eaed;
+    --background-color-dark: #333;
+    --background-color-pre-dark:  #333;
+    --text-color-dark: #f8f9fa;
+    --background-bg-color-dark: #201f1f;
+
+  }
+  
+
+
+  [data-bs-theme='light'] {
+    --background-color: var(--background-color-light);
+    --text-color: var(--text-color-light);
+    --background-bg-color: var(--background-bg-color-light);
+    --background-color-pre : var(--background-color-pre-light);
+  }
+  
+  [data-bs-theme='dark'] {
+    --background-color: var(--background-color-dark);
+    --text-color: var(--text-color-dark);
+    --background-bg-color: var(--background-bg-color-dark);
+    --background-color-pre : var(--background-color-pre-dark);
+
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+

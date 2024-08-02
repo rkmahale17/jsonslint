@@ -2,8 +2,7 @@
 
 #app {
  
-    background-color:  #e8eaed;
-
+  background-color:  var(--background-bg-color);
   font-weight: normal;
 }
 html { height: 100%; overflow:auto; }

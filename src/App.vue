@@ -9,6 +9,7 @@
   <main class=" m-auto mt-lg-5 mt-xl-5  container main-content">
   <RouterView />
  </main>
+
  <Footer />
 
   
@@ -20,7 +21,14 @@ export default {
   components:{
     AppHeader,
     Footer
-  }
+  },
+  mounted() {
+ 
+  },
+  methods:{
+    
+  },
+  
 }
 </script>
 <style scoped>

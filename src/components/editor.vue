@@ -220,7 +220,7 @@ methods: {
 }
 .editor{
   border: 1px solid #ccc;
-  background: #fff;
+  background: var(--background-color);
 }
 .br-0{
   border-radius: 0px;

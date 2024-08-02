@@ -75,7 +75,7 @@
   
   <style scoped>
   .terms-of-service {
-    background: white;
+    background: var(--background-color);
     padding: 20px;
     h5 {
         margin-top:20px;

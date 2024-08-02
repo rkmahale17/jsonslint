@@ -104,7 +104,7 @@ export default {
   padding-top:20px;
 
 
-  background: white;
+  background: var(--background-color);
   padding: 25px;;
   ul {
     padding: 0;
@@ -114,7 +114,7 @@ export default {
     padding: 4px 0px;
     a{
       text-decoration: none;
-      color:black;
+      color: var(--text-color);
     }
   }
 }

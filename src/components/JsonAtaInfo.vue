@@ -59,10 +59,11 @@
   .info-container {
     padding: 20px;
     margin: 0 auto;
+    background: var(--background-color);
   }
   
   pre {
-    background-color: #f4f4f4;
+    background-color: var(--background-color-pre);
     border: 1px solid #ddd;
     padding: 10px;
     overflow-x: auto;

@@ -451,7 +451,7 @@ export default {
   padding: 8px;
   border: none;
   border-radius: 4px;
-  color: white;
+  color: (--text-color);
   font-size: 17px;
   font-weight: 600;
   margin: 10px 0px;

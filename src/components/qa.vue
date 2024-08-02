@@ -1,9 +1,9 @@
 <template>
     <div class="qa-wrapper" v-if="load">
-<div class="card p-2 bg-black qa">
+<div class="card p-2 bg-black-qa qa">
     <h4> <span class=" ">  {{ getQuestion(id).question + "?"}}</span></h4>
 <hr>
-<h6> <span class=" txt-green">{{ getQuestion(id).answer}}</span></h6>
+<h6> <span >{{ getQuestion(id).answer}}</span></h6>
 </div>
 
 
@@ -69,14 +69,14 @@
   <style scoped>
   .qa-wrapper{
     margin:auto;
-  background: #fff;
+  /* background: var(--background-color); */
 
     max-width: 800px;
     padding:20px;
   }
   .bg-black{
-    background: black;
-    color:white;
+    /* background: var(--background-color);
+    color:var(--text-color); */
   }
   .txt-green {
     color:#18e718;

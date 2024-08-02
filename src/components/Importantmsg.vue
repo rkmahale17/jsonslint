@@ -31,7 +31,7 @@ export default {
 <style scoped>
 .messagebox {
     padding: 10px;
-    background: #95f38e;
+    background: var(--background-color);
     border-left: 3px solid #0fd900;
     margin-bottom: 10px;
     font-size:12px;

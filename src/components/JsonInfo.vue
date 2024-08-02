@@ -67,7 +67,7 @@ export default {
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #ccc;
-  background: #fff;
+  background: var(--background-color);
 }
 h1{
   font-size:20px;

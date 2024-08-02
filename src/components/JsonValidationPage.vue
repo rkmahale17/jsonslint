@@ -102,7 +102,7 @@
   }
   </script>
   
-  <style scoped>
+  <style >
   .json-validation-page {
     padding: 20px 0px;
 
@@ -117,7 +117,7 @@
   .json-validation-page h1,
   .json-validation-page h2,
   .json-validation-page h4 {
-    color: #333;
+    color: var(--text-color);
   }
   
   .json-validation-page p,
@@ -132,7 +132,7 @@
   }
   
   .json-validation-page pre {
-    background-color: #f4f4f4;
+    background-color: var(--background-color-pre);
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
